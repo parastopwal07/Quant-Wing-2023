@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Set parameters
-ticker = "ADANIPOWER.NS" 
-start_date = "2020-01-01"
-end_date = "2021-01-01"
+ticker = "RELIANCE.NS" 
+start_date = "2022-01-01"
+end_date = "2023-01-01"
 short_window = 12 #defining parameters necessary for calculating technical indicators
 long_window = 26 #time over which long exponential moving average is calculated
 signal_window = 9 #time for calculating signal from macd

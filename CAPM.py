@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from scipy import stats #used for finding linear regression parameters later
 
 # Set the stock symbol and fetch data
-stock_symbol = "AAPL" 
-nifty_symbol = "^NSEI"  # NIFTY index symbol
+stock_symbol = "ADANIGREEN.NS" 
+nifty_symbol = "^NSEI" #nifty index symbol
 start_date = "2022-01-01"
 end_date = "2023-01-01"
 
