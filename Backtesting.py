@@ -75,10 +75,10 @@ print("Maximum Drawdown:", max_drawdown, "%")
 
 # Plot results
 plt.figure(figsize=(13, 7))
-plt.plot(cumulative_returns, label="Strategy Returns") #plots cumulative return
-plt.plot(stock_data / stock_data.iloc[0], label="Stock Returns")# plots relative price of stock wrt to intial price
+plt.plot(cumulative_returns, label="Cumulative Returns") #plots cumulative return
+plt.plot(stock_data / stock_data.iloc[0], label="Relative Returns")# plots relative price of stock wrt to intial price
 plt.legend()
-plt.title("MACD and Bollinger Bands Backtest")
+plt.title("MACD and Bollinger Band Backtest")
 plt.xlabel("Date")
 plt.ylabel("Cumulative Returns")
 plt.show()

@@ -62,7 +62,7 @@ plt.figure(figsize=(13, 7))
 plt.scatter(merged_data['NIFTY Daily Return'], merged_data['Stock Daily Return'], alpha=0.7) #gives scatter plot, aplha is transparency value that allows us to see overalapping points in a better way, 1 being opaque and 0 being completely transparent
 plt.plot(merged_data['NIFTY Daily Return'], slope * merged_data['NIFTY Daily Return'] + intercept, label='Linear Regression')
 plt.legend()
-plt.title("Linear Regression: Stock vs NIFTY Daily Returns")
+plt.title("Stock vs NIFTY Daily Returns")
 plt.xlabel("NIFTY Daily Return")
 plt.ylabel("Stock Daily Return")
 plt.grid(True)

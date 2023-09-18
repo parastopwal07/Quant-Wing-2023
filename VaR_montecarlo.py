@@ -13,7 +13,7 @@ stock_data = yf.download(stock_symbols, start=start_date, end=end_date)["Adj Clo
 returns = stock_data.pct_change().dropna()
 
 # Calculate portfolio returns
-weights = np.array([0.3, 0.4, 0.3]) 
+weights = np.array([0.4, 0.4, 0.2]) 
 portfolio_returns = np.dot(returns, weights)
 
 # Monte Carlo simulation parameters

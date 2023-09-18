@@ -13,7 +13,7 @@ stock_data = yf.download(stock_symbols, start=start_date, end=end_date)["Adj Clo
 returns = stock_data.pct_change().dropna()
 
 # Calculate portfolio returns
-weights = np.array([0.3, 0.4, 0.3])  #assuming weights of the stocks in the portfolio
+weights = np.array([0.4, 0.4, 0.2])  #assuming weights of the stocks in the portfolio
 portfolio_returns = np.dot(returns, weights) #.dots is used to perform matrix/ array multiplicatio, here weight with the corresponding return df is multiplied
 
 
