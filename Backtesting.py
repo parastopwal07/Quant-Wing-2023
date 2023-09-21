@@ -37,8 +37,8 @@ signals = pd.DataFrame(index=stock_data.index) #creating dataframe signal to sto
 signals["Signal"] = 0.0 #dataframe is a 2D table here it creates a column and initialises it to 0
 
 # Generate signals based on MACD crossovers and Bollinger Bands
-signals["Signal"][(macd > signal) & (stock_data > upper_band)] = 1.0 #checks the buy and sell condition 
-signals["Signal"][(macd < signal) & (stock_data < lower_band)] = -1.0 #1 is buy and -1 is sell
+signals["Signal"][(macd > signal) & (stock_data > lower_band)] = 1.0 #checks the buy and sell condition 
+signals["Signal"][(macd < signal) & (stock_data < upper_band)] = -1.0 #1 is buy and -1 is sell
 
 # Calculate positions and returns
 signals["Position"] = signals["Signal"].diff() #creates new column in df and stores difference in two successive rows of signal
